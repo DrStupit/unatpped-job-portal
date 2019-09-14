@@ -1,0 +1,51 @@
+
+.mat-card-avatar {
+  background-image: url('/assets/img/test-photo.jpg');
+  background-size: cover;
+}
+.mat-card {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.details-container {
+  width: 100%;
+  padding: 2px 2px 2px 2px;
+}
+
+.location {
+  display: inline-block;
+  background-color: #fa7268;
+  border: 1px #fa7268;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  color: white;
+}
+.type {
+  display: inline-block;
+  margin-left: 10px;
+  background-color: #fa7268;
+  border: 1px #fa7268;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  color: white;
+}
+
+.mat-expansion-panel-header-description {
+  flex-grow: 0;
+}
+
+.mat-expansion-panel-header {
+  padding: 20px 24px;
+}
+.company-logo {
+  display: inline-block;
+}
+.job-title {
+  display: inline-block;
+}
+img{
+  border-radius: 50%;
+
+}
