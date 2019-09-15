@@ -1,0 +1,32 @@
+.filter-container {
+  margin-top: 10px;
+  text-align: left;
+  background-color: #114078;
+  padding: 15px 15px 15px 15px;
+}
+.select-category-filter {
+  display: inline-block;
+  width: 30%;
+  margin-right: 10px;
+  color: #fa7268;
+}
+.search-field {
+  display: inline;
+  color: #fa7268;
+}
+.example-full-width {
+  width: 100%;
+}
+
+.mat-chip{
+  background-color: transparent;
+  padding: 15px 25px 15px 25px;
+  border: 2px #fa7268 solid;
+  color: #fa7268;
+  font-size: 11px;
+  font-weight: 700;
+}
+.mat-select-trigger{
+  color: #fa7268;
+
+}

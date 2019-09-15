@@ -1,0 +1,25 @@
+<div class="filter-container">
+  <div class="select-category-filter">
+    <mat-form-field>
+      <mat-label style="color: #fa7268;">Categories</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let category of categories" [value]="category.id">
+          {{category.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="search-field">
+    <div style="display: inline-block; width: 50%; margin-right: 10px;">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="" value="Search" style="color: #fa7268;">
+      </mat-form-field>
+    </div>
+    <div style="display: inline-block">
+      <mat-chip-list>
+        <mat-chip class="mat-small">SEARCH</mat-chip>
+      </mat-chip-list>
+    </div>
+
+  </div>
+</div>

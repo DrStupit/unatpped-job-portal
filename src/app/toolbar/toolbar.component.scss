@@ -1,4 +1,20 @@
 .mat-toolbar.mat-primary {
-  background: #fa7268;
+  background: #114078;
   color: #fff;
+}
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-chip{
+  background-color: transparent;
+  padding: 15px 25px 15px 25px;
+  border: 2px #fa7268 solid;
+  color: #fa7268;
+  font-size: 11px;
+  font-weight: 700;
 }

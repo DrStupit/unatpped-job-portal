@@ -1,14 +1,32 @@
+.accordian-container{
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
 
-.mat-card-avatar {
-  background-image: url('/assets/img/test-photo.jpg');
-  background-size: cover;
 }
 .mat-card {
-  max-width: 700px;
+  max-width: 500px;
   margin: auto;
-  margin-bottom: 20px;
+  padding: 0px;
+  border: none !important;
+
 }
 
+.mat-card-avatar {
+  background-image: url('../../assets/img/ucloader.gif');
+  background-size: cover;
+}
+
+.mat-card-actions {
+  display: flex;
+}
+
+.mat-card-actions .flex-spacer {
+  width: 100%
+}
+.mat-card-subtitle {
+  float:left;
+}
 .details-container {
   width: 100%;
   padding: 2px 2px 2px 2px;
@@ -16,24 +34,28 @@
 
 .location {
   display: inline-block;
-  background-color: #fa7268;
-  border: 1px #fa7268;
+  background-color: #114078;
+  border: 1px #114078;
   border-radius: 5px;
   padding: 5px 10px 5px 10px;
-  color: white;
+  color: #fa7268;
 }
 .type {
   display: inline-block;
   margin-left: 10px;
-  background-color: #fa7268;
-  border: 1px #fa7268;
+  background-color: #114078;
+  border: 1px #114078;
   border-radius: 5px;
   padding: 5px 10px 5px 10px;
-  color: white;
+  color: #fa7268;
 }
 
 .mat-expansion-panel-header-description {
   flex-grow: 0;
+}
+
+mat-grid-tile {
+  background: lightblue;
 }
 
 .mat-expansion-panel-header {
