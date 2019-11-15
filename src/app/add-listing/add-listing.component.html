@@ -1,0 +1,38 @@
+
+<div class="form-container">
+    <form class="example-form" (ngSubmit)="onSubmit()" #myForm="ngForm">
+
+        <mat-form-field class="example-full-width">
+          <input id='title' matInput placeholder="Job Title" [(ngModel)]="jobListing.title" name="title"/>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput id='overview'  placeholder="Overview of Job" [(ngModel)]="jobListing.overview" name="overview"/>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput id='requirements'  placeholder="Requirements" [(ngModel)]="jobListing.requirements" name="requirements"/>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput id='responsibilities'  placeholder="Responsibilities" [(ngModel)]="jobListing.responsibilities" name="responsibilities"/>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput id='contact'  placeholder="Contact"[(ngModel)]="jobListing.contact" name="contact"/>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput id='company'  placeholder="Company Name"[(ngModel)]="jobListing.company" name="company"/>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput id='location'  placeholder="Location" [(ngModel)]="jobListing.location" name="location"/>
+        </mat-form-field>
+
+        <button type="submit" color="primary" mat-raised-button>Submit</button>
+
+      </form>
+
+
+</div>

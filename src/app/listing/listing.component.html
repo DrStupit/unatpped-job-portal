@@ -3,16 +3,16 @@
   <app-filter-component></app-filter-component>
 
   <mat-accordion>
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
+    <mat-expansion-panel *ngFor="let listing of listings">
+      <mat-expansion-panel-header >
         <div></div>
         <mat-panel-title>
           <div style="display: inline-block">
-            <mat-card>
+            <mat-card >
               <mat-card-header>
                 <div mat-card-avatar></div>
-                <mat-card-title>Junior Graphics Design</mat-card-title>
-                <mat-card-subtitle>The Backstory</mat-card-subtitle>
+                <mat-card-title>{{ listing.title }}</mat-card-title>
+                <mat-card-subtitle>{{ listing.company }}</mat-card-subtitle>
               </mat-card-header>
               <mat-card-content>
               </mat-card-content>
@@ -22,7 +22,7 @@
         <mat-panel-description>
           <div class="details-container">
             <mat-chip-list>
-              <mat-chip class="mat-small"> <mat-icon aria-hidden="false" aria-label="Example home icon" >gps_fixed</mat-icon> Durban, South Africa</mat-chip>
+              <mat-chip class="mat-small"> <mat-icon aria-hidden="false" aria-label="Example home icon" >gps_fixed</mat-icon> {{ listing.location }}</mat-chip>
               <mat-chip class="mat-small">Full-Time</mat-chip>
             </mat-chip-list>
             <!-- <div class="location">Location: Durban, South Africa</div>
@@ -32,7 +32,30 @@
         </mat-panel-description>
       </mat-expansion-panel-header>
       <!-- Add Content Component  -->
-      <app-job-description></app-job-description>
+      <mat-divider></mat-divider>
+      <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Overview">
+          <h3 style="text-align: left;">Overview</h3>
+          <p style="text-align: left;">
+            {{ listing.description.overview}}
+          </p>
+        </mat-tab>
+        <mat-tab label="Responsibilities">
+          <h3 style="text-align: left;">Responsibilities</h3>
+          <mat-list role="list">
+            <mat-list-item role="listitem">{{ listing.description.responsibilities}}</mat-list-item>
+
+          </mat-list>
+        </mat-tab>
+        <mat-tab label="Requirements">
+            <h3 style="text-align: left;">Requirements</h3>
+            <mat-list role="list">
+                <mat-list-item role="listitem">{{ listing.description.requirements}} </mat-list-item>
+            </mat-list>
+        </mat-tab>
+        <mat-tab label="Contact">Contact</mat-tab>
+      </mat-tab-group>
+
 
     </mat-expansion-panel>
 
